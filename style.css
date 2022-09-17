@@ -1,0 +1,209 @@
+*, html,  body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	scroll-behavior: smooth;
+}
+
+header	{
+	background: #1A2238;
+	color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	gap: 50px;
+}
+
+.logo {
+	margin-right: auto;
+	display: flex;
+	gap: 10px;
+}
+
+.logo-img {
+	width: 50px;
+	height: 50px;
+}
+
+.logo-title {
+	cursor: pointer;
+	transition: all .5s easy 0s;
+}
+
+.logo:hover {
+	color: #FF0000;
+	transform: rotate(3deg)
+}
+
+.btn-cta {
+	margin-right: 10px;
+	margin-top: 5px;
+	border: none;
+	font-size: 20px;
+	padding: 6px 20px;
+	background: #FF6A3D;
+	color: eaeaea;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+nav ul {
+	display: fleX;
+}
+
+li {
+	list-style-type: none;
+	padding: 8px;
+	transition: all .5s aesy 0s;
+}
+
+li a {
+	transition: all .5s easy 0s;
+	display: inline-block;
+}
+
+li a:hover {
+	color: #0000FF;
+	transform: rotate(5deg)
+}
+
+a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.title {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.description {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.img-foto {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	padding: 5px;
+}
+
+.parallax {
+	background-image:  url('ASSETS/FOTO/CUXC7732.JPG');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 500px;
+	height: 100vh;
+}
+
+.tentang {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #1A2238;
+	color: #eaeaea;
+	padding: 10px;
+}
+
+.wulan {
+	display: flex;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 5px 0;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 20px;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards-items {
+	text-align: center;
+	margin: 10px;
+	width: 100%;
+	background: #f7f7f7;
+	color: #222;
+	box-shadow: 4px 4px 4px 4px rgba(255, 0, 0)
+}
+
+.card-title {
+	font-size: 15px;
+	font-weight: bolder;
+	margin-top: 0;
+}
+
+.card-description {
+	font-size: 10px;
+}
+
+.icon {
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+	padding: 5px;
+}
+
+footer {
+	padding: 10px;
+	text-align: center;
+	background: #1A2238;
+	color: #eaeaea;
+}
+
+@media screen and (max-width: 400px) {
+	.parallax {
+		width: 100%;
+		height: 100%;
+	}
+	.wulan {
+		flex-direction: column;
+		gap: 0;
+	}
+	.card-item {
+		width: 100%;
+		padding: 0;
+		opacity: 0,5;
+	}
+	.img-foto {
+		padding: 0;
+	}
+	
+	nav {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #1A2238;
+		z-index: 5;
+	}
+	
+	footer {
+		margin-bottom: 70px;
+	}
+}

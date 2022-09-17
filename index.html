@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/favicon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>projek</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="ASSETS/LOGO/partner.png" alt="logo" class="logo-img" />
+				<h1 class="logo-title">XRYY.S</h1>
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a href="#tentang">TENTANG</a></li>
+					<li><a href="index2.html">HOBI</a></li>
+					<li><a href="mailto:handisyahroni004@gmsil.com">KONTAK</a></li>
+				<ul>
+			</nav>
+			<button class="btn-cta" onclick="redirinstagram()">follow me</button>
+		</header>
+		<div class="container">
+			<div class="intro">
+				<p class="title">Hi, im XRYY.</p>
+				<p class="description">DATTEBAYOO DA NA!</p>
+				<img src="ASSETS/FOTO/IMG_2650.JPG" alt="IMG_2650" class="img-foto"/>
+			</div>
+		</div>
+		<div class="parallax">
+			<div class="tentang">
+				<p class="title">Aku adalah aku.</p>
+				<p class="description">Just for fun WEB!</p>
+				<div class="mt-10">
+					<button class="btn-cta" onclick="alert('HO O TENAAN,BUNG')">baru belajar WEB.</button>
+				</div>
+			</div>
+			<div class="wulan">
+					<div class="card" id="tentang">
+						<div class="cards-items">
+							<img src="ASSETS/LOGO/instagram icon.png" alt="icon 1" class="icon" onclick="redirinstagram()" />
+							<p class="card-title">blog pribadi</p>
+							<p class="card-description">cuman ingin bersenang  senang,bikin happy ae bro.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="cards-items">
+							<img onclick="redirwhatsapp()" src="ASSETS/LOGO/whatsup icon.png" alt="icon 2" class="icon" />
+							<p class="card-title">whatsup bos</p>
+							<p class="card-description">nek butoh konco ngopi calling ae bro,siap melayani.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="cards-items">
+							<img onclick="redir24jam()" src="ASSETS/LOGO/24-hours.png" alt="icon 3" class="icon" />
+							<p class="card-title">sebat lovers</p>
+							<p class="card-description">ngopi dulu,biar dapat inspirasi,ready 24 jam.</p>
+						</div>
+					</div>
+			</div>
+		</div>
+		<footer>
+			<p class="title">newbie in web development role.</p>
+		</footer>
+		
+		<script>
+			function redirinstagram() {
+				window.location.href="https://instagram.com/handi_shira"
+			}
+			
+			function redirwhatsapp() {
+				window.location.href="index3.html"
+			}
+			
+			function redir24jam() {
+				window.location.href="index4.html"
+			}
+		</script>
+	</body>
+</html>
